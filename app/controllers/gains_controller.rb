@@ -1,0 +1,2 @@
+class GainsController < ApplicationController
+end

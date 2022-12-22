@@ -1,0 +1,2 @@
+class SupplementsController < ApplicationController
+end

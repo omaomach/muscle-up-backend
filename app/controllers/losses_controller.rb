@@ -1,0 +1,2 @@
+class LossesController < ApplicationController
+end
