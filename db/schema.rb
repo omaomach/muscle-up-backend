@@ -62,13 +62,13 @@ ActiveRecord::Schema.define(version: 2022_12_22_175442) do
 
   create_table "exercises", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "exercise_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "gains", force: :cascade do |t|
-    t.string "type"
+    t.string "gain_type"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 2022_12_22_175442) do
   end
 
   create_table "losses", force: :cascade do |t|
-    t.string "type"
+    t.string "loss_type"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -108,7 +108,7 @@ ActiveRecord::Schema.define(version: 2022_12_22_175442) do
 
   create_table "supplements", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "supplement_type"
     t.integer "amount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
