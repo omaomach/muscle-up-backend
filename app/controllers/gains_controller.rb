@@ -1,2 +1,0 @@
-class GainsController < ApplicationController
-end

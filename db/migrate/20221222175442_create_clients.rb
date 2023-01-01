@@ -11,11 +11,8 @@ class CreateClients < ActiveRecord::Migration[6.1]
       t.integer :trainer_id
       t.integer :diet_id
       t.string :payment_info
-      t.integer :admin_id
       t.integer :weight
       t.integer :target_weight
-      t.integer :supplements_id
-      t.integer :exercise_id
       t.timestamps
     end
   end

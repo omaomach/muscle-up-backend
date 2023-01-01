@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  resources :gains
-  resources :losses
+  resources :machine_exercises
+  resources :machines
   resources :diets
   resources :supplements
-  resources :equipment_exercises
-  resources :equipment
   resources :exercises
   resources :reviews
   resources :trainers
