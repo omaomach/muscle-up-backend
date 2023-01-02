@@ -1,0 +1,2 @@
+class MachineExercisesController < ApplicationController
+end

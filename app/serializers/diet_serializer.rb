@@ -1,3 +1,3 @@
 class DietSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :image, :diet_type
 end

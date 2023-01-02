@@ -5,7 +5,6 @@ class CreateServices < ActiveRecord::Migration[6.1]
       t.string :image
       t.string :name
       t.integer :trainer_id
-
       t.timestamps
     end
   end

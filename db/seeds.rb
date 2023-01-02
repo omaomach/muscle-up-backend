@@ -6,33 +6,32 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-levels = ["beginner", "intermediate", "expert"]
-payments = ["approved", "pending"]
+puts "Seeding"
 
-Client.create(name: Faker::Name.name ,email: "muscleup@gmail.com", image: Faker::Avatar.image, level: levels.sample, age: rand(15..60), phone_number: Faker::PhoneNumber.phone_number, trainer_id: 1, diet_id:2, payment_info:payments.sample, admin_id:1, weight: rand(35..120), supplements_id: 2, exercise_id:2, target_weight: rand(35..120))
+level = ["Beginner", "Intermediate", "Professional"]
+payment_info = ["Complete", "Partial", "Incomplete"]
+condition = ["Perfect", "Good", "Damaged"]
 
-Diet.create(name: Faker::Food.dish, image: "image.com", gain_id:1, loss_id: 3)
-names = ["Treadmill", "Barbell Set", "Rowing machine", "Stationary bicycle", "Dumbbell set"]
-conditions = ["good", "bad"]
-Equipment.create(name: names.sample, image: "image.com", number: rand(5..10), condition: conditions.sample)
+# Diets
+d1 = Diet.create!(name: "Ugali", diet_type: "Weight loss", image: "")
 
+# Machines
+machine1 = Machine.create!(name: "10kg dumbell", image: "", number: 4, condition: condition.any?)
 
-exercises = ["Pushups", "Dumbbell rows", "Side planks", "Standing overhead dumbbell presses", "Single-leg deadlifts", "Lunges"]
-type = ["musle gain", "weight loss", "stretch"]
-Exercise.create(name: exercises.sample, exercise_type: type.sample)
-EquipmentExercise.create(equipment_id:1, exercise_id:2)
+# Trainer
+trainer1 = Trainer.create!(name: "Oliver", age: 32, email: "oliver@gmail.com", phone_number: "0728748441", image: "")
 
+# Clients
+c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "", level: level.any?, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_id: d1.id, payment_info: payment_info.any?, weight: 72, target_weight: 90)
 
-Gain.create(gain_type:"protein", description: Faker::Food.description )
+# Supplements
+supplements1 = Supplement.create!(name: "Mass Gainer", supplement_type: "Rapid Weight Gain", amount: 2, client_id: c1.id)
 
-Loss.create(loss_type:"protein", description: Faker::Food.description )
+# Exercises
+exercise1 = Exercise.create!(name: "Back Squat", exercise_type: "Leg Exercise", client_id: c1.id)
 
-Gym.create(name:"MuscleUp", location:Faker::Address.city, open_hours:"8am-8pm", description: "gym lets work out")
+# Machine, Exercise
+me1 = MachineExercise.create!(machine_id: machine1.id, exercise_id: exercise1.id)
 
-Review.create(client_id: 1, review:"fantastic gym")
+puts "Done Seeding"
 
-Service.create(description: "gumba dance", image: "image.com", name: "gumba dance")
-
-Supplement.create(name:"protein powder", supplement_type:"weight gain", amount:2 )
-
-Trainer.create(name:Faker::Name.name, age: rand(23..35), email:"trainer@gmail.com", phone_number:Faker::PhoneNumber.phone_number, image: "image.com")

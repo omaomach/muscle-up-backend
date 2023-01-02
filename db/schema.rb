@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_22_175442) do
+ActiveRecord::Schema.define(version: 2022_12_31_125338) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,50 +26,24 @@ ActiveRecord::Schema.define(version: 2022_12_22_175442) do
     t.integer "trainer_id"
     t.integer "diet_id"
     t.string "payment_info"
-    t.integer "admin_id"
     t.integer "weight"
     t.integer "target_weight"
-    t.integer "supplements_id"
-    t.integer "exercise_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "diets", force: :cascade do |t|
     t.string "name"
+    t.string "diet_type"
     t.string "image"
-    t.integer "gain_id"
-    t.integer "loss_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "equipment_exercises", force: :cascade do |t|
-    t.integer "equipment_id"
-    t.integer "exercise_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "equipments", force: :cascade do |t|
-    t.string "name"
-    t.string "image"
-    t.integer "number"
-    t.string "condition"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "exercises", force: :cascade do |t|
     t.string "name"
+    t.integer "client_id"
     t.string "exercise_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "gains", force: :cascade do |t|
-    t.string "gain_type"
-    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -83,9 +57,18 @@ ActiveRecord::Schema.define(version: 2022_12_22_175442) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "losses", force: :cascade do |t|
-    t.string "loss_type"
-    t.string "description"
+  create_table "machine_exercises", force: :cascade do |t|
+    t.integer "machine_id"
+    t.integer "exercise_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "machines", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.integer "number"
+    t.string "condition"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -108,6 +91,7 @@ ActiveRecord::Schema.define(version: 2022_12_22_175442) do
 
   create_table "supplements", force: :cascade do |t|
     t.string "name"
+    t.integer "client_id"
     t.string "supplement_type"
     t.integer "amount"
     t.datetime "created_at", precision: 6, null: false
