@@ -1,3 +1,3 @@
 class MachineSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :condition
 end
