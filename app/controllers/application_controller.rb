@@ -25,7 +25,7 @@ class ApplicationController < ActionController::API
         end
     end
 
-    def current_user
+    def current_client
         if decoded_token
             # decoded_token=> [{"user_id"=>2}, {"alg"=>"HS256"}]
             # or nil if we can't decode the token
