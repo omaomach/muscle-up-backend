@@ -8,13 +8,18 @@ Rails.application.routes.draw do
   resources :trainers
   resources :services
   resources :gyms
-  resources :clients
+  # resources :clients
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  post '/login', to: 'sessions#create'
-  delete 'logout', to: 'sessions#destroy'
-  get "/me", to: "clients#show"
-  post "/signup", to: "clients#create"
+  # post '/login', to: 'sessions#create'
+  # delete 'logout', to: 'sessions#destroy'
+  # get "/me", to: "clients#show"
+  # post "/signup", to: "clients#create"
+  
+  resources :clients
+  post '/login', to: 'auth#create'
+  get '/profile', to: 'clients#profile'
+  post '/signup', to: 'clients#create'
 
   # get '/hello', to: 'application#hello_world'
 end
