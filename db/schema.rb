@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_12_31_125338) do
     t.integer "age"
     t.string "phone_number"
     t.integer "trainer_id"
-    t.integer "diet_id"
+    t.string "diet_type"
     t.string "payment_info"
     t.integer "weight"
     t.integer "target_weight"
@@ -44,13 +44,7 @@ ActiveRecord::Schema.define(version: 2022_12_31_125338) do
     t.string "name"
     t.integer "client_id"
     t.string "exercise_type"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "gains", force: :cascade do |t|
-    t.string "gain_type"
-    t.string "description"
+    t.string "exercise_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -59,13 +53,6 @@ ActiveRecord::Schema.define(version: 2022_12_31_125338) do
     t.string "name"
     t.string "location"
     t.string "open_hours"
-    t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "losses", force: :cascade do |t|
-    t.string "loss_type"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
