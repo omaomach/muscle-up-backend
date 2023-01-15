@@ -9,7 +9,7 @@ class CreateClients < ActiveRecord::Migration[6.1]
       t.integer :age
       t.string :phone_number
       t.integer :trainer_id
-      t.integer :diet_id
+      t.string :diet_type
       t.string :payment_info
       t.integer :weight
       t.integer :target_weight
