@@ -44,7 +44,7 @@ trainer7 = Trainer.create!(name: "Roy Masai", age: 32, email: "roy@gmail.com", p
 trainer8 = Trainer.create!(name: "Lilian Wangechi", age: 32, email: "lilian@gmail.com", phone_number: "0728748441", image: "")
 
 # Clients
-c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "", level: level.any?, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_id: d1.id, payment_info: payment_info.any?, weight: 72, target_weight: 90)
+c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "", level: level.any?, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.any?, weight: 72, target_weight: 90)
 
 # Supplements
 supplements1 = Supplement.create!(name: "Mass Gainer", supplement_type: "Rapid Weight Gain", amount: 2, client_id: 1)
@@ -58,21 +58,21 @@ supplements7 = Supplement.create!(name: "Beta-hydroxy beta-methylbutyrate", supp
 
 
 # Exercises
-exercise1 = Exercise.create!(name: "Back Squat", exercise_type: "Leg Exercise", client_id: c1.id)
-exercise2 = Exercise.create!(name: "Front Squat", exercise_type: "Leg Exercise", client_id: c1.id)
-exercise3 = Exercise.create!(name: "Lunges", exercise_type: "Leg Exercise", client_id: c1.id)
-exercise4 = Exercise.create!(name: "Bench Press", exercise_type: "Chest", client_id: c1.id)
-exercise5 = Exercise.create!(name: "Preacher Curls", exercise_type: "Bicep Exercise", client_id: c1.id)
-exercise6 = Exercise.create!(name: "Barbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id)
-exercise6 = Exercise.create!(name: "Dumbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id)
-exercise7 = Exercise.create!(name: "Shoulder Press", exercise_type: "Shoulder Exercise", client_id: c1.id)
-exercise8 = Exercise.create!(name: "Barbell Rows", exercise_type: "Back Exercise", client_id: c1.id)
-exercise9 = Exercise.create!(name: "Dumbell Rows", exercise_type: "Back Exercise", client_id: c1.id)
-exercise11 = Exercise.create!(name: "Lying Tricep Extensions", exercise_type: "Tricep Exercise", client_id: c1.id)
-exercise12 = Exercise.create!(name: "Tricep Dips", exercise_type: "Tricep Exercise", client_id: c1.id)
-exercise13 = Exercise.create!(name: "Cable Curls", exercise_type: "Bicep Exercise", client_id: c1.id)
-exercise14 = Exercise.create!(name: "Hammer Curls", exercise_type: "Bicep Exercise", client_id: c1.id)
-exercise14 = Exercise.create!(name: "Pull ups", exercise_type: "Back Exercise", client_id: c1.id)
+exercise1 = Exercise.create!(name: "Back Squat", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "")
+exercise2 = Exercise.create!(name: "Front Squat", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "")
+exercise3 = Exercise.create!(name: "Lunges", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "")
+exercise4 = Exercise.create!(name: "Bench Press", exercise_type: "Chest", client_id: c1.id, exercise_image: "")
+exercise5 = Exercise.create!(name: "Preacher Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
+exercise6 = Exercise.create!(name: "Barbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
+exercise6 = Exercise.create!(name: "Dumbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
+exercise7 = Exercise.create!(name: "Shoulder Press", exercise_type: "Shoulder Exercise", client_id: c1.id, exercise_image: "")
+exercise8 = Exercise.create!(name: "Barbell Rows", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "")
+exercise9 = Exercise.create!(name: "Dumbell Rows", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "")
+exercise11 = Exercise.create!(name: "Lying Tricep Extensions", exercise_type: "Tricep Exercise", client_id: c1.id, exercise_image: "")
+exercise12 = Exercise.create!(name: "Tricep Dips", exercise_type: "Tricep Exercise", client_id: c1.id, exercise_image: "")
+exercise13 = Exercise.create!(name: "Cable Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
+exercise14 = Exercise.create!(name: "Hammer Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
+exercise14 = Exercise.create!(name: "Pull ups", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "")
 
 
 # Machine, Exercise
