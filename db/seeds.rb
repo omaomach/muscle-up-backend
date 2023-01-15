@@ -60,21 +60,21 @@ supplements7 = Supplement.create!(name: "Beta-hydroxy beta-methylbutyrate", supp
 
 
 # Exercises
-exercise1 = Exercise.create!(name: "Back Squat", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "")
-exercise2 = Exercise.create!(name: "Front Squat", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "")
-exercise3 = Exercise.create!(name: "Lunges", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "")
-exercise4 = Exercise.create!(name: "Bench Press", exercise_type: "Chest", client_id: c1.id, exercise_image: "")
-exercise5 = Exercise.create!(name: "Preacher Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
-exercise6 = Exercise.create!(name: "Barbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
-exercise6 = Exercise.create!(name: "Dumbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
-exercise7 = Exercise.create!(name: "Shoulder Press", exercise_type: "Shoulder Exercise", client_id: c1.id, exercise_image: "")
-exercise8 = Exercise.create!(name: "Barbell Rows", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "")
-exercise9 = Exercise.create!(name: "Dumbell Rows", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "")
-exercise11 = Exercise.create!(name: "Lying Tricep Extensions", exercise_type: "Tricep Exercise", client_id: c1.id, exercise_image: "")
-exercise12 = Exercise.create!(name: "Tricep Dips", exercise_type: "Tricep Exercise", client_id: c1.id, exercise_image: "")
-exercise13 = Exercise.create!(name: "Cable Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
-exercise14 = Exercise.create!(name: "Hammer Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "")
-exercise14 = Exercise.create!(name: "Pull ups", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "")
+exercise1 = Exercise.create!(name: "Back Squat", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "https://julielohre.com/wp-content/uploads/2017/11/Barbell-Back-Squat.jpg")
+exercise2 = Exercise.create!(name: "Front Squat", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "https://legionathletics.com/wp-content/uploads/2022/04/Blogpost-Size-barbellfrontsquat-17.03.2022.png")
+exercise3 = Exercise.create!(name: "Lunges", exercise_type: "Leg Exercise", client_id: c1.id, exercise_image: "https://evofitness.at/wp-content/uploads/2020/02/EVO-2020-PP-March-Banner_23.jpg")
+exercise4 = Exercise.create!(name: "Bench Press", exercise_type: "Chest", client_id: c1.id, exercise_image: "https://cdn.mos.cms.futurecdn.net/pLaRi5jXSHDKu6WRydetBo-1200-80.jpg")
+exercise5 = Exercise.create!(name: "Preacher Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "https://www.thisiswhyimfit.com/wp-content/uploads/2022/02/Preacher-Curl-Alternatives.jpg")
+exercise6 = Exercise.create!(name: "Barbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1330227065_1000x.jpg?v=1636217410")
+exercise6 = Exercise.create!(name: "Dumbell Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "https://cdn.mos.cms.futurecdn.net/PUh4gpdENASaQybBDXAgPj.jpg")
+exercise7 = Exercise.create!(name: "Shoulder Press", exercise_type: "Shoulder Exercise", client_id: c1.id, exercise_image: "https://i.ytimg.com/vi/b5JzUH8gsOg/maxresdefault.jpg")
+exercise8 = Exercise.create!(name: "Barbell Rows", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "https://www.muscleandfitness.com/wp-content/uploads/2019/03/barbell-bentover-row-1109.jpg?quality=86&strip=all")
+exercise9 = Exercise.create!(name: "Dumbell Rows", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "https://hips.hearstapps.com/hmg-prod/images/form-check-index-1552580046.png")
+exercise11 = Exercise.create!(name: "Lying Tricep Extensions", exercise_type: "Tricep Exercise", client_id: c1.id, exercise_image: "https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2016/11/10131130/Skull_Crushers_1675-2000x1000-1.jpeg")
+exercise12 = Exercise.create!(name: "Tricep Dips", exercise_type: "Tricep Exercise", client_id: c1.id, exercise_image: "https://img.freepik.com/free-photo/profile-beautiful-active-woman-her-30s-wearing-black-activewear-doing-tricep-dips-with-jump-box_662251-1343.jpg?w=2000")
+exercise13 = Exercise.create!(name: "Cable Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "https://www.verywellfit.com/thmb/8NfMBTAZPexG6f2dNg1PolMwwJQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/54-3498289-Biceps-Cable-Curl-GIF-204a7e1692d44c78950100362cc5b986.gif")
+exercise14 = Exercise.create!(name: "Hammer Curls", exercise_type: "Bicep Exercise", client_id: c1.id, exercise_image: "https://julielohre.com/wp-content/uploads/2018/07/HammerCurls.jpg")
+exercise14 = Exercise.create!(name: "Pull ups", exercise_type: "Back Exercise", client_id: c1.id, exercise_image: "https://s3.amazonaws.com/prod.skimble/assets/1782050/skimble-workout-trainer-exercise-reverse-pull-ups-2_iphone.jpg")
 
 
 # Machine, Exercise
