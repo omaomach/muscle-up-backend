@@ -1,3 +1,3 @@
 class GymSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :name, :location, :open_hours, :description
 end
