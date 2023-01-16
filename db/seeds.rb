@@ -45,7 +45,7 @@ trainer8 = Trainer.create!(name: "Lilian Wangechi", age: 32, email: "lilian@gmai
 
 # Clients
 
-c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "https://production-next-images-cdn.thumbtack.com/i/447226666005553166/width/1024.jpeg", level: level.any?, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.any?, weight: 72, target_weight: 90)
+c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "https://production-next-images-cdn.thumbtack.com/i/447226666005553166/width/1024.jpeg", level: level.sample, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.any?, weight: 72, target_weight: 90)
 
 
 # Supplements
