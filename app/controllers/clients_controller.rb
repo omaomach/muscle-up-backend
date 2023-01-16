@@ -12,7 +12,7 @@ class ClientsController < ApplicationController
     
     def create
         # byebug
-        @client = Client.create(client_params)
+        @client = Client.create!(client_params)
         if @client.valid?
             @token = encode_token(client_id: @client_id)
             render json: { client: ClientSerializer.new(@client), jwt: @token }, status: :created
