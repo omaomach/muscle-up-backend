@@ -34,7 +34,7 @@ machine = Machine.create!(name: "Preacher", image: "https://5.imimg.com/data5/XK
 
 
 # Trainer
-trainer1 = Trainer.create!(name: "Oliver Twist", age: 32, email: "oliver@gmail.com", phone_number: "0728748441", image: "https://img.freepik.com/premium-photo/sport-muscular-fitness-man-working-out-gym_174475-134.jpg?w=2000")
+trainer1 = Trainer.create!(name: "Oliver Twist", age: 32, email: "oliver@gmail.com", image: "https://img.freepik.com/premium-photo/sport-muscular-fitness-man-working-out-gym_174475-134.jpg?w=2000", phone_number: "0728748441")
 trainer2 = Trainer.create!(name: "Martin Lawrence", age: 28, email: "martin@gmail.com", phone_number: "0728748441", image: "https://thumbs.dreamstime.com/b/african-american-fitness-trainer-14694263.jpg")
 trainer3 = Trainer.create!(name: "Packson Mwangi", age: 32, email: "packson@gmail.com", phone_number: "0728748441", image: "https://media.istockphoto.com/id/475395886/photo/young-african-american-male-personal-trainer.jpg?s=612x612&w=0&k=20&c=imx4dY8M7Ty4olIyo9x0MX2h3L9CE-iHQEIX3LSGnFo=")
 trainer4 = Trainer.create!(name: "Joash Machoka", age: 23, email: "joash@gmail.com", phone_number: "0728748441", image: "https://img.freepik.com/premium-photo/strong-fitness-trainer-with-naked-torso-poses-cross-hands-gym-background-handsome-african-american-athlete_116317-9031.jpg")
@@ -44,8 +44,7 @@ trainer7 = Trainer.create!(name: "Roy Masai", age: 32, email: "roy@gmail.com", p
 trainer8 = Trainer.create!(name: "Lilian Wangechi", age: 32, email: "lilian@gmail.com", phone_number: "0728748441", image: "https://cdn.shopify.com/s/files/1/0557/9004/3326/files/tess1024x1024_1600x.jpg?v=1635881652")
 
 # Clients
-
-c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "https://production-next-images-cdn.thumbtack.com/i/447226666005553166/width/1024.jpeg", level: level.any?, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.any?, weight: 72, target_weight: 90)
+c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "https://production-next-images-cdn.thumbtack.com/i/447226666005553166/width/1024.jpeg", level: level.sample, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
 
 
 # Supplements

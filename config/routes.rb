@@ -21,5 +21,7 @@ Rails.application.routes.draw do
   get '/profile', to: 'clients#profile'
   post '/signup', to: 'clients#create'
 
+  
+
   # get '/hello', to: 'application#hello_world'
 end
