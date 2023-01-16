@@ -44,7 +44,6 @@ trainer7 = Trainer.create!(name: "Roy Masai", age: 32, email: "roy@gmail.com", p
 trainer8 = Trainer.create!(name: "Lilian Wangechi", age: 32, email: "lilian@gmail.com", phone_number: "0728748441", image: "https://cdn.shopify.com/s/files/1/0557/9004/3326/files/tess1024x1024_1600x.jpg?v=1635881652")
 
 # Clients
-
 c1 = Client.create!(name: "Joash", email: "machokajoash@gmail.com", image: "https://production-next-images-cdn.thumbtack.com/i/447226666005553166/width/1024.jpeg", level: level.sample, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
 
 
@@ -91,4 +90,3 @@ me1 = MachineExercise.create!(machine_id: machine6.id, exercise_id: exercise7.id
 
 
 puts "Done Seeding"
-

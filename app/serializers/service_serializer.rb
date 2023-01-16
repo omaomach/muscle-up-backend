@@ -1,3 +1,3 @@
 class ServiceSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :description, :image, :name, :trainer_id
 end
