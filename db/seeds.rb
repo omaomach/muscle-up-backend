@@ -54,20 +54,20 @@ c6 = Client.create!(name: "Ali", email: "Ali@gmail.com", image: "https://img.fre
 c7 = Client.create!(name: "Nick", email: "Nick@gmail.com", image: "https://spotonphotographers.com/wp-content/uploads/2021/07/DSC03562-ps-insta-tall.jpg", level: level.sample, password: "joash", age: 53, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
 c8 = Client.create!(name: "Josh", email: "Josh@gmail.com", image: "https://spotonphotographers.com/wp-content/uploads/2021/07/DSC03590-ps-insta-tall.jpg", level: level.sample, password: "joash", age: 18, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight loss", payment_info: payment_info.sample, weight: 80, target_weight: 70)
 c9 = Client.create!(name: "Joan", email: "Joan@gmail.com", image: "https://www.at-edge.com/images/artistimages/images/14340_328098@2x.jpg", level: level.sample, password: "joash", age: 29, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
-c10 = Client.create!(name: "Tomashi", email: "Tomashi@gmail.com", image: "https://i2.wp.com/cypheravenue.com/wp-content/uploads/2015/10/dolvette-low-res-4.jpg?resize=705%2C1024&ssl=1", level: level.sample, password: "joash", age: 27, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: paymegnt_info.sample, weight: 72, target_weight: 90)
+c10 = Client.create!(name: "Tomashi", email: "Tomashi@gmail.com", image: "https://i2.wp.com/cypheravenue.com/wp-content/uploads/2015/10/dolvette-low-res-4.jpg?resize=705%2C1024&ssl=1", level: level.sample, password: "joash", age: 27, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
 c11= Client.create!(name: "Kyle", email: "Kyle@gmail.com", image: "https://blackdoctor.org/wp-content/uploads/2017/07/222.jpg", level: level.sample, password: "joash", age: 21, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight loss", payment_info: payment_info.sample, weight: 71, target_weight: 60)
 c12 = Client.create!(name: "John", email: "John@gmail.com", image: "https://media.istockphoto.com/id/1337244046/photo/portrait-of-a-young-fit-sweaty-man-sitting-in-the-gym-after-his-workout.jpg?s=612x612&w=0&k=20&c=bmZE1YkPBZHiLY1H20zdvJcZ3yEo0NgL2d4AMb0zGeI=", level: level.sample, password: "joash", age: 22, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
 c13 = Client.create!(name: "Peete", email: "Peete@gmail.com", image: "https://www.shutterstock.com/image-photo/smiling-african-american-athletic-man-260nw-1906396111.jpg", level: level.sample, password: "joash", age: 23, phone_number: "0728748441", trainer_id: trainer1.id, diet_type: "Weight gain", payment_info: payment_info.sample, weight: 72, target_weight: 90)
 
 
 # Supplements
-supplements1 = Supplement.create!(name: "Mass Gainer", supplement_type: "Rapid Weight Gain", amount: 2, client_id: 1)
-supplements2 = Supplement.create!(name: "Creatine", supplement_type: "Muscle Gain", amount: 1, client_id: 1)
-supplements3 = Supplement.create!(name: "Protein Supplements", supplement_type: "Muscle Growth", amount: 1, client_id: 1)
-supplements4 = Supplement.create!(name: "Weight Gainers", supplement_type: "Weight Gain", amount: 2, client_id: 1)
-supplements5 = Supplement.create!(name: "Beta-alanine", supplement_type: "Improve Exercise Performance", amount: 2, client_id: 1)
-supplements6 = Supplement.create!(name: "Branched-chain amino acids", supplement_type: "Muscle Gain", amount: 1, client_id: 1)
-supplements7 = Supplement.create!(name: "Beta-hydroxy beta-methylbutyrate", supplement_type: "Intensity Training", amount: 2, client_id: 1)
+supplements1 = Supplement.create!(name: "Mass Gainer", supplement_type: "Rapid Weight Gain", amount: 2, client_id: 1, image: "https://c8.alamy.com/comp/JA36T5/3d-render-of-mass-gainer-bottles-isolated-over-white-background-JA36T5.jpg")
+supplements2 = Supplement.create!(name: "Creatine", supplement_type: "Muscle Gain", amount: 1, client_id: 1, image: "https://img.freepik.com/free-vector/realistic-set-two-barbells-sport-supplement-glassy-surface-white-background-vector-illustration_1284-19886.jpg")
+supplements3 = Supplement.create!(name: "Protein Supplements", supplement_type: "Muscle Growth", amount: 1, client_id: 1, image: "https://cdn2.stylecraze.com/wp-content/uploads/2014/07/Protein-Supplements.jpg")
+supplements4 = Supplement.create!(name: "Weight Gainers", supplement_type: "Weight Gain", amount: 2, client_id: 1, image: "https://m.media-amazon.com/images/I/61jU-YTiR8L._SY450_.jpg")
+supplements5 = Supplement.create!(name: "Beta-alanine", supplement_type: "Improve Exercise Performance", amount: 2, client_id: 1, image: "https://www.ironbody.de/images/product_images/original_images/BetaAlaine.jpg")
+supplements6 = Supplement.create!(name: "Branched-chain amino acids", supplement_type: "Muscle Gain", amount: 1, client_id: 1, image: "https://sport.wetestyoutrust.com/sites/default/files/styles/original/public/2020-09/Now%20Foods%20-%20NOW%20Sports%20Branched%20Chain%20Amino%20Acids%20Powder%20-%201.png?itok=7YvjgmL3")
+supplements7 = Supplement.create!(name: "Beta-hydroxy beta-methylbutyrate", supplement_type: "Intensity Training", amount: 2, client_id: 1, image: "https://images-na.ssl-images-amazon.com/images/I/41ORf3GkrKL._UL500_.jpg")
 
 
 
