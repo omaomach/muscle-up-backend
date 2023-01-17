@@ -95,6 +95,7 @@ ActiveRecord::Schema.define(version: 2023_01_16_122939) do
     t.string "name"
     t.integer "client_id"
     t.string "supplement_type"
+    t.string "image"
     t.integer "amount"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
