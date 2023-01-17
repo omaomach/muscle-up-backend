@@ -5,4 +5,9 @@ class TrainersController < ApplicationController
         render json: trainers, status: 200
     end
 
+    def delete
+        trainer = Trainer.find(params[:id])
+        trainer.destroy
+        render json: {}
+    end
 end

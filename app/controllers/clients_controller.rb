@@ -30,6 +30,12 @@ class ClientsController < ApplicationController
         end
     end
 
+    def delete
+        client = Client.find(params[:id])
+        client.destroy
+        render json: {}
+    end
+
     private
     def client_params
       params.permit(:name, :email, :phone_number, :password, :password_confirmation, :trainer_id, :diet_id)
