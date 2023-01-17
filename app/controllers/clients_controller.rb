@@ -5,10 +5,10 @@ class ClientsController < ApplicationController
       render json: Client.all
     end
 
-    # def index
-    #   clients = Client.all
-    #   render json: clients
-    # end
+    def index
+      clients = Client.all
+      render json: clients
+    end
 
     def profile 
         render json: { client: ClientSerializer.new(current_client) }, status: :accepted
