@@ -1,5 +1,9 @@
 class ClientsController < ApplicationController
-    skip_before_action :authorized, only: [:create]
+    skip_before_action :authorized, only: [:create, :index]
+
+    def index
+      render json: Client.all
+    end
 
     def index
       clients = Client.all
