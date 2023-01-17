@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    before_action :authorized, only: [:index]
+    before_action :authorized
 
     def encode_token(payload)
         # payload => { beef: 'steak' }
