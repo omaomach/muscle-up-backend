@@ -7,10 +7,10 @@ class TrainersController < ApplicationController
 
     def create
         trainer = Trainer.create!(name: trainer_params[:name], age: trainer_params[:age], email: trainer_params[:email], phone_number: trainer_params[:phone_number], image: trainer_params[:image]) 
-        render json :trainer, status: :created
+        render json: trainer, status: :created
     end
 
-    def delete
+    def destroy
         trainer = Trainer.find(params[:id])
         trainer.destroy
         render json: {}
