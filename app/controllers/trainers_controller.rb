@@ -11,7 +11,7 @@ class TrainersController < ApplicationController
     end
 
     def destroy
-        trainer = Trainer.find_by(:id)
+        trainer = Trainer.find(params[:id])
         trainer.destroy
         render json: {}
     end
