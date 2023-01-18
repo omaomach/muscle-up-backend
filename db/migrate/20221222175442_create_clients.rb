@@ -7,6 +7,8 @@ class CreateClients < ActiveRecord::Migration[6.1]
       t.string :level
       t.string :password_digest
       t.integer :age
+      t.string :bio
+      t.integer :height
       t.string :phone_number
       t.integer :trainer_id
       t.string :diet_type
