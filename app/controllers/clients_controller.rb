@@ -1,5 +1,5 @@
 class ClientsController < ApplicationController
-    skip_before_action :authorized, only: [:create, :index]
+    skip_before_action :authorized, only: [:create]
 
     def index
       render json: Client.all
@@ -38,7 +38,7 @@ class ClientsController < ApplicationController
 
     private
     def client_params
-      params.permit(:name, :email, :phone_number, :password, :password_confirmation, :trainer_id, :diet_id)
+      params.permit(:name, :email, :phone_number, :password, :password_confirmation, :image, :weight, :target_weight, :level)
     end
 
 end
