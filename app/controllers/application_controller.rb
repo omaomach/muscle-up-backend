@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-    before_action :authorized, except: [:create, :index]
+    before_action :authorized, except: [:create, :index, :destroy]
 
     def encode_token(payload)
         # payload => { beef: 'steak' }

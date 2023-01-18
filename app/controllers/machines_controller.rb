@@ -10,7 +10,7 @@ class MachinesController < ApplicationController
         render json: machine, status: 200
     end
 
-    def delete
+    def destroy
         machine = Machine.find(params[:id])
         machine.destroy
         render json: {}
